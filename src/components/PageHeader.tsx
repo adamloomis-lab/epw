@@ -3,11 +3,13 @@
 export default function PageHeader({
   eyebrow,
   title,
+  subtitle,
   intro,
   image,
 }: {
   readonly eyebrow: string
   readonly title: string
+  readonly subtitle?: string
   readonly intro?: string
   readonly image?: string
 }) {
@@ -32,6 +34,9 @@ export default function PageHeader({
         <h1 className="font-display mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl">
           {title}
         </h1>
+        {subtitle && (
+          <p className="font-display mt-4 text-xl font-semibold text-lime md:text-2xl">{subtitle}</p>
+        )}
         {intro && <p className="mt-5 max-w-2xl text-lg text-white/85">{intro}</p>}
       </div>
     </section>

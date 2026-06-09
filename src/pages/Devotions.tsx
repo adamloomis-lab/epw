@@ -9,8 +9,9 @@ export default function Devotions() {
     <>
       <PageHeader
         eyebrow="Devotions"
-        title="From the Word, for the Church."
-        intro="Short devotionals from the field — stories and Scripture from the frontlines where EPW trains pastors to preach God’s Word faithfully."
+        title="Equipping Pastors, Feeding Sheep"
+        subtitle="30 Stories from EPW’s Front Line"
+        intro="Short devotionals from the field. Real moments and Scripture from the frontlines where EPW trains pastors to preach God’s Word faithfully."
         image={photos.congregation}
       />
 

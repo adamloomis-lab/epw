@@ -190,9 +190,9 @@ export function getPageMeta(rawPath: string): PageMeta {
       }
     case '/devotions':
       return {
-        title: 'Devotions | Equipping Pastors Worldwide',
+        title: 'Equipping Pastors, Feeding Sheep: 30 Stories from EPW’s Front Line',
         description:
-          'Short devotionals from the field — stories and Scripture from the frontlines where EPW trains pastors to preach God’s Word faithfully.',
+          'Equipping Pastors, Feeding Sheep: 30 stories from EPW’s front line. Short devotionals and Scripture from the frontlines where EPW trains pastors to preach God’s Word faithfully.',
         canonical: pageUrl('/devotions'),
         ogImage,
         jsonLd: [
