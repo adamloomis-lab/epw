@@ -26,7 +26,7 @@ export const devotions: Devotion[] = [
     category: 'Devotions',
     scriptureReference: 'Mark 9:7 (ESV)',
     scriptureText: 'This is my beloved Son; listen to him.',
-    featuredImage: '/images/devotions/dave-holdt-south-africa-2026.jpg',
+    featuredImage: '/images/devotions/dave-holdt-south-africa-2026-v2.jpg',
     featuredImageCaption: 'Dave Holdt teaching in South Africa, April 2026',
     excerpt:
       'A sangoma walked into pastor training wearing the skins of a witch doctor. One year later he returned, the attire gone, declaring the only thing that had changed him: Jesus only.',
