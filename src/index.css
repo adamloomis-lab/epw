@@ -1,0 +1,293 @@
+@import 'tailwindcss';
+
+/* ----------------------------------------------------------------------------
+   Equipping Pastors Worldwide (EPW) — design system
+   A missions nonprofit equipping pastors across the Global South. Warm, hopeful,
+   trustworthy. Deep navy of conviction + pine/teal of growth + a bright lime
+   that carries every call to action. Outfit (geometric, friendly, mission
+   voice) for display; Inter for clean, readable body copy.
+   Brand marks sampled from the EPW logo: lime #9FC031, teal #005B52, navy #062A42.
+---------------------------------------------------------------------------- */
+
+@theme {
+  /* Surfaces */
+  --color-canvas: #f6f7f3;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eef1ea;
+  --color-cream: #f3f5ec;
+  --color-ink: #11261d;
+  --color-ink-soft: #3b4a40;
+  --color-muted: #6c7a6f;
+  --color-line: #e3e7dc;
+
+  /* Brand */
+  --color-navy: #082a44;
+  --color-navy-deep: #04202f;
+  --color-pine: #1d5c43;
+  --color-pine-bright: #2a7a59;
+  --color-teal: #005b52;
+  --color-lime: #8cbf2e;
+  --color-lime-bright: #a7d643;
+  --color-lime-ink: #1b2f08;
+
+  /* Type */
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(8, 42, 68, 0.05), 0 16px 34px -18px rgba(8, 42, 68, 0.24);
+  --shadow-lift: 0 26px 60px -24px rgba(8, 42, 68, 0.4);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  background-image: linear-gradient(180deg, #fbfcf8 0%, var(--color-canvas) 42%, #eaeee2 100%);
+  background-attachment: fixed;
+  color: var(--color-ink-soft);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: var(--color-lime-ink);
+}
+
+/* ---- Depth backgrounds (plain classes so they replace flat fills) ---- */
+.depth-navy {
+  background-color: var(--color-navy);
+  background-image:
+    radial-gradient(120% 95% at 50% -10%, rgba(140, 191, 46, 0.16), transparent 58%),
+    radial-gradient(85% 120% at 100% 0%, rgba(0, 91, 82, 0.45), transparent 60%);
+}
+.depth-pine {
+  background-color: var(--color-pine);
+  background-image:
+    radial-gradient(120% 100% at 50% -10%, rgba(167, 214, 67, 0.22), transparent 60%),
+    radial-gradient(80% 120% at 0% 100%, rgba(8, 42, 68, 0.4), transparent 55%);
+}
+.depth-soft {
+  background-color: var(--color-surface-soft);
+  background-image: linear-gradient(180deg, #ffffff 0%, var(--color-cream) 55%, #e7ebde 100%);
+}
+
+@layer components {
+  /* ---- Layout helpers ---- */
+  .container-x {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-x {
+      padding-inline: 2rem;
+    }
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* ---- Eyebrow label ---- */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-pine-bright);
+  }
+  .eyebrow-lime {
+    color: var(--color-lime);
+  }
+
+  /* ---- Lime divider rule ---- */
+  .lime-rule {
+    display: block;
+    height: 4px;
+    width: 3.5rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--color-lime), var(--color-lime-bright));
+  }
+
+  /* ---- Headline display sizing ---- */
+  .h-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    color: var(--color-pine);
+    font-size: clamp(2.7rem, 6.6vw, 4.6rem);
+  }
+  .h-section {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    color: var(--color-pine);
+    font-size: clamp(2.1rem, 4.4vw, 3.2rem);
+  }
+
+  /* ---- Buttons ---- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    padding: 1rem 1.8rem;
+    border-radius: 12px;
+    transition: all 0.18s ease;
+    cursor: pointer;
+  }
+  .btn:active {
+    transform: scale(0.985);
+  }
+  .btn-lime {
+    background: var(--color-lime);
+    color: var(--color-lime-ink);
+    box-shadow: 0 12px 28px -12px rgba(140, 191, 46, 0.85);
+  }
+  .btn-lime:hover {
+    background: var(--color-lime-bright);
+  }
+  .btn-navy {
+    background: var(--color-navy);
+    color: #fff;
+    box-shadow: 0 12px 28px -12px rgba(8, 42, 68, 0.6);
+  }
+  .btn-navy:hover {
+    background: #0c3a5c;
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--color-pine);
+    border: 1.5px solid var(--color-line);
+  }
+  .btn-outline:hover {
+    border-color: var(--color-pine);
+    background: var(--color-cream);
+  }
+  .btn-ghost-light {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+  }
+  .btn-ghost-light:hover {
+    background: rgba(255, 255, 255, 0.16);
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 18px;
+    box-shadow: var(--shadow-card);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .lift:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lift);
+  }
+
+  /* ---- Legal page typography ---- */
+  .legal-body h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-size: 1.35rem;
+    color: var(--color-ink);
+    margin-top: 1.6rem;
+  }
+  .legal-body a {
+    color: var(--color-teal);
+    text-decoration: underline;
+  }
+  .legal-body ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+  .legal-body li {
+    margin-top: 0.35rem;
+  }
+}
+
+/* ---- Scroll reveal ---- */
+.reveal-ready .reveal,
+.reveal-ready .reveal-left,
+.reveal-ready .reveal-right,
+.reveal-ready .reveal-scale,
+.reveal-ready .reveal-group > * {
+  opacity: 0;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-ready .reveal,
+.reveal-ready .reveal-group > * {
+  transform: translateY(26px);
+}
+.reveal-ready .reveal-left {
+  transform: translateX(-36px);
+}
+.reveal-ready .reveal-right {
+  transform: translateX(36px);
+}
+.reveal-ready .reveal-scale {
+  transform: scale(0.93);
+}
+.reveal-ready .reveal-group > * {
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.reveal-ready .reveal.is-visible,
+.reveal-ready .reveal-left.is-visible,
+.reveal-ready .reveal-right.is-visible,
+.reveal-ready .reveal-scale.is-visible,
+.reveal-ready .reveal-group.is-visible > * {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Parallax ---- */
+[data-parallax] {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-ready .reveal,
+  .reveal-ready .reveal-left,
+  .reveal-ready .reveal-right,
+  .reveal-ready .reveal-scale,
+  .reveal-ready .reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .lift:hover {
+    transform: none;
+  }
+  [data-parallax] {
+    transform: none !important;
+  }
+}
