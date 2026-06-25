@@ -169,7 +169,7 @@ export function getPageMeta(rawPath: string): PageMeta {
       return {
         title: 'Why EPW | The Mission to Equip Pastors Worldwide',
         description:
-          'The Church in the Global South is growing fast, but most pastors have never been trained to preach the Bible. EPW meets them on the frontlines — teaching God’s Word faithfully in their own language.',
+          'The Church in the Global South is growing fast, but most pastors have never been trained to preach the Bible. EPW meets them on the frontlines, teaching God’s Word faithfully in their own language.',
         canonical: pageUrl('/about'),
         ogImage,
         jsonLd: [base, breadcrumb([{ name: 'Home', path: '/' }, { name: 'Why EPW', path: '/about' }])],

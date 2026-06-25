@@ -9,7 +9,7 @@ export const org = {
   tagline: 'Equipping Shepherds. Strengthening the Church.',
   ein: '', // TODO: confirm 501(c)(3) EIN with EPW
   shortBlurb:
-    'Equipping Pastors Worldwide trains and resources pastors on the frontlines of the Global South — so they can preach God’s Word faithfully, in their own language, right where they serve.',
+    'Equipping Pastors Worldwide trains and resources pastors on the frontlines of the Global South, so they can preach God’s Word faithfully, in their own language, right where they serve.',
   founded: 0, // TODO: confirm founding year
   // No public email shown on the site by request — visitors reach EPW via the
   // /contact form. (Form submissions still notify an inbox via Netlify Forms;
@@ -70,7 +70,7 @@ export const tiers = [
     title: 'Train a Pastor',
     amount: '$100',
     lead: '$100 helps provide biblical training and translated resources.',
-    body: 'Many pastors lead entire congregations with no formal instruction. Your support helps EPW bring faithful teaching and trusted materials in their own language — right where they serve.',
+    body: 'Many pastors lead entire congregations with no formal instruction. Your support helps EPW bring faithful teaching and trusted materials in their own language, right where they serve.',
   },
   {
     id: 'equip-a-region',
@@ -86,14 +86,14 @@ export const tiers = [
     title: 'Multiply the Mission',
     amount: 'Monthly',
     lead: 'Become a monthly partner.',
-    body: 'Your ongoing support fuels long-term impact — more books translated, more languages reached, and more pastors trained in the world’s hardest places.',
+    body: 'Your ongoing support fuels long-term impact: more books translated, more languages reached, and more pastors trained in the world’s hardest places.',
   },
 ] as const
 
 // "WHY EPW?" band.
 export const whyEpw = {
   heading: 'Why EPW?',
-  tagline: 'We go where others can’t — and train those others overlook.',
+  tagline: 'We go where others can’t, and train those others overlook.',
   body: 'EPW meets pastors on the frontlines of the Global South, teaching them to preach God’s Word faithfully in their own language. These are men and women serving in hidden, high-risk places where false teaching spreads fastest and truth costs the most.',
   points: [
     {
@@ -128,7 +128,7 @@ export const faqs = [
   },
   {
     q: 'Who does EPW train?',
-    a: 'Pastors and church leaders on the frontlines of the Global South — many leading entire congregations with no formal instruction, often in hidden, high-risk places.',
+    a: 'Pastors and church leaders on the frontlines of the Global South, many leading entire congregations with no formal instruction, often in hidden, high-risk places.',
   },
   {
     q: 'How is the training delivered?',
@@ -136,7 +136,7 @@ export const faqs = [
   },
   {
     q: 'What does it mean to become a monthly partner?',
-    a: 'Monthly partners provide steady support that fuels long-term impact — more books translated, more languages reached, and more pastors trained in the world’s hardest places.',
+    a: 'Monthly partners provide steady support that fuels long-term impact: more books translated, more languages reached, and more pastors trained in the world’s hardest places.',
   },
   {
     q: 'Is my donation tax-deductible?',

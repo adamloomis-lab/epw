@@ -17,7 +17,7 @@ const { render, getPageMeta, ALL_ROUTES, SITE_URL } = await import(
 )
 
 const SITE_NAME = 'Equipping Pastors Worldwide'
-const OG_ALT = 'Equipping Pastors Worldwide — training pastors on the frontlines of the Global South'
+const OG_ALT = 'Equipping Pastors Worldwide: training pastors on the frontlines of the Global South'
 
 const template = readFileSync(join(DIST, 'index.html'), 'utf-8')
 

@@ -138,7 +138,7 @@ export default function Give() {
               {
                 Icon: Repeat,
                 title: 'Give monthly',
-                body: 'Become a monthly partner and fuel long-term impact — more books translated, more languages reached, more pastors trained.',
+                body: 'Become a monthly partner and fuel long-term impact: more books translated, more languages reached, more pastors trained.',
               },
               {
                 Icon: Church,

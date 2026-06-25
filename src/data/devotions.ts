@@ -19,6 +19,28 @@ export type Devotion = {
 
 export const devotions: Devotion[] = [
   {
+    title: 'We Thought We Knew',
+    slug: 'we-thought-we-knew',
+    date: '2026-04-22',
+    author: 'Equipping Pastors Worldwide',
+    category: 'Devotions',
+    scriptureReference: '1 Corinthians 8:2 (ESV)',
+    scriptureText: 'If anyone thinks he knows anything, he does not yet know as he ought to know.',
+    featuredImage: '/images/devotions/we-thought-we-knew-nigeria.jpg',
+    featuredImageCaption: 'Studying the texts, Nigeria, October 2024',
+    excerpt:
+      'After EPW’s training, a pastor in southern Nigeria stood before his congregation and confessed: “We thought we knew what the church is and how to build a healthy church. We did not know.”',
+    body: [
+      'After completing EPW’s training, a pastor in southern Nigeria stood before his congregation with a confession that should haunt us: “We thought we knew what the church is and how to build a healthy church. We did not know.”',
+      'Consider the weight of that admission. This man had been shepherding God’s flock: preaching, baptizing, burying the dead, marrying couples. He was sincere. He was devoted. But he had never been taught to rightly divide the Word of truth. His people were spiritually malnourished under his care, and he didn’t know it. Across the Global South, 85% of pastors face this same reality: leading churches with empty hands, mixing Scripture with tradition because no one ever showed them the difference.',
+      'The transformation came through EPW’s training in biblical exposition and sound doctrine. His church is now strong, grounded in God’s Word. But think of the thousands who remain where he was, faithful men with hungry congregations, unaware of how much they don’t know. This isn’t a matter of intelligence or zeal. It’s access to training we take for granted. We have 800 English Bible translations, seminary libraries, and podcasts. They have one worn Bible and no framework to understand it.',
+    ],
+    prayer:
+      'Lord, forgive us for taking biblical training for granted. Burden our hearts for pastors who shepherd faithfully but have never been equipped. Raise up workers to train them. Use us to close the gap between their hunger and our abundance. For Your Church’s sake, Amen.',
+    takeAction:
+      'Visit EPWUSA.org and adopt a pastor or training program. Your partnership equips shepherds who will feed Christ’s flock for generations. Give today.',
+  },
+  {
     title: 'Jesus Only',
     slug: 'jesus-only',
     date: '2026-04-15',

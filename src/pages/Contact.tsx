@@ -9,7 +9,7 @@ export default function Contact() {
       <PageHeader
         eyebrow="Contact"
         title="Let’s strengthen the Church together."
-        intro="Whether you want to give, mobilize your church, or simply learn more about the mission — we’d love to hear from you."
+        intro="Whether you want to give, mobilize your church, or simply learn more about the mission, we’d love to hear from you."
         image={photos.group}
       />
 

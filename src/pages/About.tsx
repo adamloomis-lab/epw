@@ -11,7 +11,7 @@ export default function About() {
       <PageHeader
         eyebrow="Why EPW"
         title="We go where others can’t."
-        intro="Equipping Pastors Worldwide meets pastors on the frontlines of the Global South — training them to preach God’s Word faithfully, in their own language, right where they serve."
+        intro="Equipping Pastors Worldwide meets pastors on the frontlines of the Global South, training them to preach God’s Word faithfully, in their own language, right where they serve."
         image={photos.whyEpw}
       />
 
@@ -88,7 +88,7 @@ export default function About() {
                 Icon: Globe2,
                 step: '02',
                 title: 'Equip',
-                body: 'They take that teaching — and trusted materials — back to the communities they serve, often in hidden, high-risk places.',
+                body: 'They take that teaching, and trusted materials, back to the communities they serve, often in hidden, high-risk places.',
               },
               {
                 Icon: Cross,

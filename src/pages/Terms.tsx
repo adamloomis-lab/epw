@@ -24,7 +24,7 @@ export default function Terms() {
 
       <h2>Intellectual property</h2>
       <p>
-        The content on this site — including text, photographs, logos, and graphics — is owned by EPW or
+        The content on this site, including text, photographs, logos, and graphics, is owned by EPW or
         used with permission, and may not be reproduced without consent.
       </p>
 

@@ -140,7 +140,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 text-lg text-ink-soft">
               Whether you help train one pastor or support a group of ten, your generosity makes this
-              work possible — strengthening churches from the inside out.
+              work possible, strengthening churches from the inside out.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/give" className="btn btn-lime">
@@ -232,7 +232,7 @@ export default function Home() {
             <span className="eyebrow">From the Field</span>
             <h2 className="h-section mt-3">Preaching Under Pressure</h2>
             <p className="mt-4 text-lg text-ink-soft">
-              See what it means to preach God’s Word faithfully where truth costs the most — and how
+              See what it means to preach God’s Word faithfully where truth costs the most, and how
               your partnership reaches the pastors standing firm.
             </p>
           </div>
@@ -269,7 +269,7 @@ export default function Home() {
         <div className="container-x relative py-16 text-center md:py-24">
           <Quote size={40} className="mx-auto text-lime" />
           <h2 className="font-display mx-auto mt-5 max-w-3xl text-3xl font-bold leading-tight md:text-4xl">
-            Help strengthen the Church from the inside out — one pastor at a time.
+            Help strengthen the Church from the inside out, one pastor at a time.
           </h2>
           <div className="mt-9 flex flex-wrap justify-center gap-3">
             <Link href="/give" className="btn btn-lime">

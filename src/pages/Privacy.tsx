@@ -11,7 +11,7 @@ export default function Privacy() {
 
       <h2>Information we collect</h2>
       <p>
-        We collect information you choose to provide — such as your name, email address, phone number,
+        We collect information you choose to provide, such as your name, email address, phone number,
         and any message you send through our contact form. We also collect limited, non-identifying
         technical data (such as browser type and pages visited) to keep the site working and understand
         how it’s used.

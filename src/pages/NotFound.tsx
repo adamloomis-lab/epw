@@ -8,7 +8,7 @@ export default function NotFound() {
         <span className="font-display text-7xl font-extrabold text-lime md:text-8xl">404</span>
         <h1 className="font-display mt-4 text-3xl font-bold md:text-4xl">Page not found</h1>
         <p className="mt-4 max-w-md text-white/80">
-          We couldn’t find that page. The mission continues — let’s get you back on the path.
+          We couldn’t find that page. The mission continues. Let’s get you back on the path.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link href="/" className="btn btn-lime">
