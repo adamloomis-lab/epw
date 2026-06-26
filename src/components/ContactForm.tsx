@@ -68,7 +68,7 @@ export default function ContactForm() {
             name="name"
             required
             autoComplete="name"
-            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink outline-none transition-colors focus:border-pine"
+            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink focus-visible:outline-none transition-colors focus:border-pine"
           />
         </label>
         <label className="block">
@@ -78,7 +78,7 @@ export default function ContactForm() {
             name="email"
             required
             autoComplete="email"
-            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink outline-none transition-colors focus:border-pine"
+            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink focus-visible:outline-none transition-colors focus:border-pine"
           />
         </label>
       </div>
@@ -92,7 +92,7 @@ export default function ContactForm() {
             type="tel"
             name="phone"
             autoComplete="tel"
-            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink outline-none transition-colors focus:border-pine"
+            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink focus-visible:outline-none transition-colors focus:border-pine"
           />
         </label>
         <label className="block">
@@ -102,7 +102,7 @@ export default function ContactForm() {
           <select
             name="role"
             defaultValue=""
-            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink outline-none transition-colors focus:border-pine"
+            className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink focus-visible:outline-none transition-colors focus:border-pine"
           >
             <option value="" disabled>
               Select one
@@ -122,7 +122,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink outline-none transition-colors focus:border-pine"
+          className="mt-1.5 w-full rounded-lg border border-line bg-white px-4 py-3 text-ink focus-visible:outline-none transition-colors focus:border-pine"
         />
       </label>
 

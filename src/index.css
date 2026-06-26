@@ -17,7 +17,7 @@
   --color-cream: #f3f5ec;
   --color-ink: #11261d;
   --color-ink-soft: #3b4a40;
-  --color-muted: #6c7a6f;
+  --color-muted: #5e6b62;
   --color-line: #e3e7dc;
 
   /* Brand */
@@ -290,4 +290,10 @@ body {
   [data-parallax] {
     transform: none !important;
   }
+}
+
+/* WCAG 2.4.7 keyboard focus */
+*:focus-visible {
+  outline: 2px solid var(--color-pine);
+  outline-offset: 3px;
 }
