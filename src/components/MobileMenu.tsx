@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Link } from 'wouter'
 import { X, ArrowRight, Heart, Mail, Globe } from 'lucide-react'
 import Logo from './Logo'
@@ -20,13 +21,19 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
   useEffect(() => {
     if (open) {
       document.body.style.overflow = 'hidden'
-      const id = requestAnimationFrame(() => setShown(true))
+      // Double rAF so the panel mounts off-screen before the slide-in
+      // transform is applied, guaranteeing the transition actually runs.
+      let raf2 = 0
+      const raf1 = requestAnimationFrame(() => {
+        raf2 = requestAnimationFrame(() => setShown(true))
+      })
       const onKey = (e: KeyboardEvent) => {
         if (e.key === 'Escape') onClose()
       }
       window.addEventListener('keydown', onKey)
       return () => {
-        cancelAnimationFrame(id)
+        cancelAnimationFrame(raf1)
+        cancelAnimationFrame(raf2)
         window.removeEventListener('keydown', onKey)
         document.body.style.overflow = ''
       }
@@ -36,8 +43,15 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
   }, [open, onClose])
 
   if (!open) return null
+  // SSR guard — document only exists in the browser.
+  if (typeof document === 'undefined') return null
 
-  return (
+  // IMPORTANT: render at document.body via portal so the panel's
+  // `position: fixed` escapes the header's containing block. The header
+  // uses `backdrop-blur`, which makes it a containing block for fixed
+  // descendants — that's why the menu was clipping to the header strip
+  // before this portal was added.
+  return createPortal(
     <div className="lg:hidden fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Menu">
       {/* Backdrop */}
       <button
@@ -81,8 +95,8 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
                 key={l.href}
                 href={l.href}
                 onClick={onClose}
-                className={`group flex items-center justify-between border-b border-white/10 py-4 font-display text-2xl font-semibold uppercase tracking-tight text-white/90 transition-all duration-500 hover:text-lime-bright ${
-                  shown ? 'translate-x-0 opacity-100' : 'translate-x-6 opacity-0'
+                className={`group flex items-center justify-between border-b border-white/10 py-4 font-display text-2xl font-semibold uppercase tracking-tight text-white/90 transition-transform duration-500 motion-reduce:transition-none hover:text-lime-bright ${
+                  shown ? 'translate-x-0' : 'translate-x-6'
                 }`}
                 style={{ transitionDelay: `${120 + i * 70}ms` }}
               >
@@ -96,8 +110,8 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
           </nav>
 
           <div
-            className={`mt-8 flex flex-col gap-3 transition-all duration-500 ${
-              shown ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+            className={`mt-8 flex flex-col gap-3 transition-transform duration-500 motion-reduce:transition-none ${
+              shown ? 'translate-y-0' : 'translate-y-4'
             }`}
             style={{ transitionDelay: `${120 + links.length * 70 + 60}ms` }}
           >
@@ -128,6 +142,7 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
