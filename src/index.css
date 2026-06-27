@@ -297,3 +297,53 @@ body {
   outline: 2px solid var(--color-pine);
   outline-offset: 3px;
 }
+
+/* ---- Elevated CTA / form motion ---- */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 14px 34px -10px rgba(140, 191, 46, 0.85), 0 0 0 0 rgba(167, 214, 67, 0.55);
+  }
+  50% {
+    box-shadow: 0 16px 40px -8px rgba(140, 191, 46, 0.95), 0 0 0 6px rgba(167, 214, 67, 0);
+  }
+}
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(420%) skewX(-12deg);
+  }
+}
+@keyframes draw-check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2.6s ease-in-out infinite;
+}
+.animate-pulse-soft {
+  animation: pulse-soft 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-glow-pulse,
+  .animate-pulse-soft {
+    animation: none !important;
+  }
+  .sheen-on-hover::after {
+    display: none !important;
+  }
+}

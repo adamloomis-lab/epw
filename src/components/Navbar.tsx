@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'wouter'
-import { Menu, X, ArrowRight } from 'lucide-react'
+import { Menu, ArrowRight } from 'lucide-react'
 import Logo from './Logo'
+import MobileMenu from './MobileMenu'
 import { org } from '../data/site'
 import { useScrolled } from '../hooks/useScrolled'
 
@@ -59,37 +60,16 @@ export default function Navbar() {
 
         <button
           type="button"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setOpen(true)}
           className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-line text-ink lg:hidden"
-          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-label="Open menu"
           aria-expanded={open}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          <Menu size={22} />
         </button>
       </nav>
 
-      {open && (
-        <div className="border-t border-line bg-surface lg:hidden">
-          <ul className="container-x flex flex-col gap-1 py-4">
-            {links.map((l) => (
-              <li key={l.href}>
-                <Link
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="font-display block rounded-lg px-3 py-3 text-base font-medium text-ink hover:bg-cream"
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-            <li className="mt-2 px-1">
-              <Link href="/give" onClick={() => setOpen(false)} className="btn btn-lime w-full">
-                Join the Mission <ArrowRight size={16} />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
+      <MobileMenu open={open} onClose={() => setOpen(false)} links={links} />
     </header>
   )
 }
