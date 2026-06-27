@@ -1,9 +1,9 @@
 import { Link } from 'wouter'
-import { ArrowRight, Globe2, Languages, Sparkles, BookOpen, Cross } from 'lucide-react'
+import { ArrowRight, Globe2, Languages, Sprout, BookOpen, Cross } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { need, whyEpw, photos } from '../data/site'
 
-const whyIcons = [Globe2, Languages, Sparkles]
+const whyIcons = [Globe2, Languages, Sprout]
 
 export default function About() {
   return (

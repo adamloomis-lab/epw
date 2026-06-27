@@ -8,7 +8,7 @@ import {
   Quote,
   Globe2,
   Languages,
-  Sparkles,
+  Sprout,
   Play,
 } from 'lucide-react'
 import { hero, need, tiers, whyEpw, stats, photos, org } from '../data/site'
@@ -20,7 +20,7 @@ const tierIcons: Record<string, typeof BookOpen> = {
   HeartHandshake,
 }
 
-const whyIcons = [Globe2, Languages, Sparkles]
+const whyIcons = [Globe2, Languages, Sprout]
 
 export default function Home() {
   return (
