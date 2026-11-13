@@ -19,6 +19,64 @@ export type Devotion = {
 
 export const devotions: Devotion[] = [
   {
+    title: '“How Can I Be a Pastor?”',
+    slug: 'how-can-i-be-a-pastor',
+    date: '2026-11-13',
+    author: 'Equipping Pastors Worldwide',
+    category: 'Devotions',
+    scriptureReference: '1 Timothy 3:1',
+    scriptureText: 'If anyone aspires to the office of overseer, he desires a noble task.',
+    featuredImage: '/images/devotions/how-can-i-be-a-pastor-dharan.jpg',
+    featuredImageCaption: 'EPW',
+    excerpt:
+      'When Meherman first came to our training in Dharan, he was a deacon, not a pastor. When a group asked him to lead them, his answer showed his heart: “How can I be a pastor?” Today he leads a church of more than 350.',
+    body: [
+      'When Meherman first came to our training in Dharan, he wasn’t a pastor. He was a deacon in a local Methodist church: faithful, thoughtful, and eager to learn.',
+      'Through two conferences and ongoing mentoring, he studied the Bible more deeply than ever before.',
+      'In Paul’s teaching on church leadership in Timothy, he saw something troubling: his church’s leadership was not aligned with the gospel. Others saw it too.',
+      'A group made the costly decision to leave, and they asked Meherman to be their pastor.',
+      'His answer showed his heart: “How can I be a pastor? My only training has been these EPW conferences and mentoring.”',
+      'No ambition. No entitlement. Only humility.',
+      'We encouraged him to depend on the Lord, stay grounded in His Word, and trust God to use him.',
+      'And He has.',
+      'Today Meherman leads a thriving church of more than 350 people, and it has planted several more. Children with disabilities are often abandoned where he lives, so local authorities bring them to him, and his care gives them hope.',
+      'He also helps organise EPW training in his region, equipping others the way he was equipped. He remains deeply grateful for the faithful supporters who made that possible.',
+      'What began with a hesitant deacon has become a growing ministry of gospel truth and practical compassion.',
+    ],
+    prayer:
+      'Lord, thank You for lifting up the humble and building Your church through ordinary people who trust Your Word. Keep Pastor Meherman faithful, raise up more shepherds like him, and show me my part in equipping them. Amen.',
+    takeAction:
+      'Read 1 Timothy 3:1-7, the passage that shaped Meherman, and ask where God is calling you to be faithful. Then help equip the next pastor like him at epwusa.org.',
+  },
+  {
+    title: 'He Went Back',
+    slug: 'he-went-back',
+    date: '2026-10-22',
+    author: 'Equipping Pastors Worldwide',
+    category: 'Devotions',
+    scriptureReference: 'Psalm 96:3 (ESV)',
+    scriptureText: 'Declare his glory among the nations, his marvelous works among all the peoples!',
+    featuredImage: '/images/devotions/he-went-back-rajasthan.jpg',
+    featuredImageCaption: 'EPW',
+    excerpt:
+      'Pastor Ajith had planted over 100 churches before he ever came to our training in Rajasthan. A year later he returned, frail from a beating, and told the room what happened when he went back to the village that drove him out.',
+    body: [
+      'When Pastor Ajith first came to our training in Rajasthan, he had already lived a lifetime of ministry. An older man, he had planted over 100 churches, yet like many leaders in his context, he had received very little formal theological training. Still, he came eager to learn.',
+      'At the end of that first conference, he spoke with quiet determination. Rather than slowing down in later life, he said he felt newly inspired to go out and preach God’s Word with fresh clarity and conviction.',
+      'A year later, he returned. This time, he looked noticeably more frail. During a testimony session, he stood and shared what had happened since.',
+      'After the training, he said, he had been “full of fire for Jesus.” He gathered a team and travelled to a village where there were no known believers. There, they shared the gospel, sang, and distributed Christian literature. One family welcomed them in and asked them to stay and pray.',
+      'But that welcome was short-lived.',
+      'A hostile crowd formed and threatened to kill them if they did not leave. Ajith refused to go, explaining that he had come in the authority of Jesus. The mob turned violent. He was beaten severely, suffering a broken eye socket and multiple broken ribs. The entire team was driven out. He made it home, injured but resolute. For seven days, he prayed and fasted for that village, asking God not only to work, but to give him the courage to return.',
+      'Two months later, he did. And he did not go alone.',
+      'Today, there is a church in that village: more than 30 people gathering to follow Christ.',
+      'As he finished his testimony, the room was silent. Then he simply said that it all began with the encouragement and teaching he had received. What started as one man being strengthened in God’s Word became a community transformed.',
+    ],
+    prayer:
+      'Lord Jesus, You were despised and rejected for our sake, and You promised that Your servants would share in Your sufferings. Thank You for Pastor Ajith and for every shepherd who counts the cost and goes anyway. Strengthen the persecuted pastors of India and the Global South. Heal their wounds, steady their courage, and give them fresh boldness in Your Word. Forgive us when we shrink from small discomforts, and make us faithful where You have placed us. Plant Your church in every village that has never heard Your name. For Your glory, Amen.',
+    takeAction:
+      'Pastor Ajith went back to that village carrying the Word he had been taught. Visit epwusa.org and adopt a pastor or training program. Your gift sends trainers to men like Ajith, so the gospel reaches places where no church yet stands. Give today.',
+  },
+  {
     title: 'When Barriers Become Doors',
     slug: 'when-barriers-become-doors',
     date: '2026-09-30',
