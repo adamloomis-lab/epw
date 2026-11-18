@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Send, HandHelping, Heart, Mail, Users, MessageCircle, Phone } from 'lucide-react'
 import { FloatField, SuccessCheck } from './FluidField'
+import { org } from '../data/site'
 
 // Netlify Forms. The prerendered (SSG) HTML ships this exact static
 // <form name="contact" data-netlify="true" netlify-honeypot="bot-field"> so
@@ -63,7 +64,7 @@ export default function ContactForm() {
           with pastors on the frontlines.
         </p>
         <a
-          href="https://epworldwide.org/support/donate-funds/"
+          href={org.give.donate}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-lime mt-6 inline-flex"

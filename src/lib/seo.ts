@@ -3,8 +3,8 @@ import { devotions, getDevotion } from '../data/devotions'
 
 // Production target domain. Canonicals, sitemap, OG and schema all point here so
 // SEO value lands on the live host the moment DNS flips from the old Duda site.
-// This site's domain is epwusa.org. (Giving is processed on the separate
-// epworldwide.org/support/donate-funds page — see org.give.donate.)
+// This site's domain is epwusa.org. (Giving is processed through EPW's USD
+// Stripe link, see org.give.donate.)
 export const SITE_URL = 'https://epwusa.org'
 
 const OG_IMAGE = '/images/og-cover.jpg'

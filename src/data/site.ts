@@ -33,9 +33,10 @@ export const org = {
     youtube: '',
   },
   give: {
-    // EPW's live online-giving page (confirmed by client).
-    donate: 'https://epworldwide.org/support/donate-funds/',
-    monthly: 'https://epworldwide.org/support/donate-funds/',
+    // EPW's USD giving link on Stripe (client request via Carl, 2026-11-18).
+    // Replaced the epworldwide.org page, which took US donors to UK giving.
+    donate: 'https://buy.stripe.com/14A8wPaan9lq3RE5uZenS02',
+    monthly: 'https://buy.stripe.com/14A8wPaan9lq3RE5uZenS02',
   },
   // "Preaching Under Pressure | Faithful Pastors Respond" — Missions:Together.
   videoId: 'Ljd4F-HUAHY',
